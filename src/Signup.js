@@ -1,19 +1,41 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate from React Router
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './App.css';
-import logo from './img/logo_todo_clear-removebg-preview.png'; // Updated path
-
+import logo from './img/logo_todo_clear-removebg-preview.png';
 
 const Signup = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault();
+    const { password, confirmPassword } = formData;
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
+    setError('');
 
     // Here you would typically handle form validation and submission logic
     // ...
 
-    // Navigate to the Optsignin route
     navigate('/Optsignup');
   };
 
@@ -39,25 +61,60 @@ const Signup = () => {
                 <i className="fab fa-facebook-f"></i>
               </a>
 
-              <form onSubmit={handleSubmit}> {/* Use handleSubmit function */}
+              <form onSubmit={handleSubmit}>
+                {error && <p className="text-danger">{error}</p>}
                 <div className="input-icons">
                   <i className="fa fa-user icon"></i>
-                  <input className="input-field" type="text" placeholder="Username" name="username" required />
+                  <input
+                    className="input-field"
+                    type="text"
+                    placeholder="Username"
+                    name="username"
+                    value={formData.username}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className="input-icons">
                   <i className="fa fa-envelope icon"></i>
-                  <input className="input-field" type="email" placeholder="Email" name="email" required />
+                  <input
+                    className="input-field"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className="input-icons">
                   <i className="fa fa-key icon"></i>
-                  <input className="input-field" type="password" placeholder="Password" name="password" minLength="6" required />
+                  <input
+                    className="input-field"
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    minLength="6"
+                    required
+                  />
                 </div>
                 <div className="input-icons">
                   <i className="fa fa-key icon"></i>
-                  <input className="input-field" type="password" placeholder="Confirm Password" name="confirmPassword" minLength="6" required />
+                  <input
+                    className="input-field"
+                    type="password"
+                    placeholder="Confirm Password"
+                    name="confirmPassword"
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
+                    minLength="6"
+                    required
+                  />
                 </div>
                 <button type="submit" className="signup btn custom-button mb-2">Sign Up</button>
-                <p>Have an Account? <Link to="/login" style={{ color: 'grey' }}>Login</Link>.</p> {/* Use Link for internal navigation */}
+                <p>Have an Account? <Link to="/login" style={{ color: 'grey' }}>Login</Link>.</p>
               </form>
             </div>
           </div>
