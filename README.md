@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+ <h1>Todo </h1>
+    <p>This is a React-based Todo App that allows users to manage their tasks efficiently. The application includes features to add, update, delete, and remove tasks, as well as login and signup functionality.</p>
+
+<h2>Features</h2>
+ <ul>
+        <li><strong>Task Management:</strong> Add, update(mark as done /undo), delete tasks.</li>
+     <li><strong>Filters:</strong> All ,Active and completed tasks are filtered.</li>
+   <li><strong>Search</strong> You can search the task easily .</li>
+        <li><strong>User Authentication:</strong> Secure login and signup pages.</li>
+        <li><strong>Responsive Design:</strong> Fully functional on both desktop and mobile devices.</li>
+ </ul>
+ # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
