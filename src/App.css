@@ -13,18 +13,9 @@ body {
 
 .content {
   flex: 1;
-}
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.content {
-  flex: 1;
   padding: 15px;
   margin: 0 auto;
-  max-width: 1200px; /* Adjust as needed for your design */
+  max-width: 1200px; 
 }
 
 @media (max-width: 576px) {
@@ -32,33 +23,51 @@ body {
     padding: 20px;
     margin: 0 10px;
   }
-
-  /* Adjust navbar for small screens */
   .navbar {
     padding: 0.5rem;
   }
-
-  .navbar-toggler {
-    margin-right: 0;
-  }
-
   .navbar-brand img {
-    height: 25px; /* Smaller logo on mobile */
+    height: 25px;
   }
-
-  /* Adjust footer for small screens */
   .container-fluid {
     padding: 10px;
   }
-
   .btn-sm-square {
     font-size: 14px;
     width: 30px;
     height: 30px;
   }
-
   .footer-icons a {
     font-size: 14px;
+  }
+}
+
+
+/* navbar */
+/* Navbar Styles */
+.custom-navbar {
+  background-color: #fff; /* or your preferred background color */
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+/* Navbar links and buttons */
+.custom-navbar .navbar-nav {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Navbar links and buttons on mobile screens */
+@media (max-width: 576px) {
+  .custom-navbar .navbar-nav {
+    justify-content: center; /* Center horizontally */
+  }
+
+  .custom-navbar .navbar-nav .btn {
+    display: block; /* Make each button a block element */
+    width: 100%; /* Make buttons full-width on mobile */
+    text-align: center; /* Center text inside buttons */
+    margin-bottom: 1rem; /* Add some spacing between buttons */
   }
 }
 
@@ -70,135 +79,10 @@ body {
   margin: 0 5px;
 }
 
-.todo-input input {
-  flex: 1;
-}
-
-.todo-input button {
-  margin-left: 5px;
-}
-
-.todo-item input {
-  width: calc(100% - 100px); /* Adjust based on button sizes */
-}
-
-.todo-item .d-flex {
-  justify-content: flex-end;
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-icons a {
-  font-size: 18px;
-  margin: 0 5px;
-}
-/* General Styles */
-.todo-filters {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Adjust as needed */
-  margin-top: 15px;
-}
-
-.todo-filters button {
-  padding: 10px 15px;
-  font-size: 16px;
-}
-
-/* Mobile Styles */
-@media (max-width: 576px) {
-  .todo-filters {
-    flex-direction: column;
-    align-items: center; /* Center buttons horizontally */
-  }
-
-  .todo-filters button {
-    width: 100%; /* Ensure buttons take full width */
-    margin-bottom: 10px; /* Space between buttons */
-  }
-}
-/* General Styles */
-.todo-filters {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Adjust as needed */
-  margin-top: 15px;
-}
-
-.todo-filters button {
-  padding: 10px 15px;
-  font-size: 16px;
-}
-
-/* Mobile Styles */
-@media (max-width: 576px) {
-  .todo-filters {
-    flex-direction: column;
-    align-items: center; /* Center buttons horizontally */
-  }
-
-  .todo-filters button {
-    width: 100%; /* Ensure buttons take full width */
-    margin-bottom: 10px; /* Space between buttons */
-  }
-}
-
-/* General Styles */
-.todo-input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; /* Adjust spacing between elements as needed */
-  margin-bottom: 20px; /* Space below the input and buttons */
-}
-
-.todo-input input {
-  flex: 1; /* Allow input field to take up available space */
-  padding: 10px;
-  font-size: 16px;
-}
-
-.todo-input button {
-  padding: 10px 15px;
-  font-size: 16px;
-}
-
-/* Mobile Styles */
-@media (max-width: 576px) {
-  .todo-input {
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-  }
-
-  .todo-input input {
-    width: 100%; /* Make input field full width on mobile */
-    margin-bottom: 10px; /* Space below the input field */
-  }
-
-  .todo-input button {
-    width: 100%; /* Make buttons full width on mobile */
-    margin-bottom: 10px; /* Space below each button */
-  }
-}
-
-.todo-input input {
-  width: 100%;
-}
-
-.todo-container, .list-group {
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .navbar-text {
   margin-left: 10px;
 }
 
-/* Remove default focus styles for all buttons */
 .navbar .btn-p:focus,
 .navbar .btn-outline-light:focus,
 .navbar .btn-p:active,
@@ -228,7 +112,7 @@ body {
   color: black;
 }
 
-/* Navbar Styles */
+
 .custom-navbar {
 background-color: #E8E8E8;
   padding: 10px 20px;
@@ -269,18 +153,19 @@ background-color: #E8E8E8;
   outline: none;
 }
 
-/* Navbar Toggler Styles for Mobile */
 .navbar-toggler {
+  /* text-align: center; */
   border: none;
 }
 
-/* Todo App Styles */
+/* Todo  */
+
+
 .todo-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* General Styling for Todo Item */
 .todo-item {
   position: relative;
   display: flex;
@@ -290,10 +175,9 @@ background-color: #E8E8E8;
   border-bottom: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 0.5rem;
-  background-color:#ddd; /* Match background color */
+  background-color:#ddd; 
 }
 
-/* Style the input text */
 .todo-item input {
   flex: 1;
   border: none;
@@ -302,16 +186,16 @@ background-color: #E8E8E8;
   color: #333;
   padding: 0.5rem;
   border-radius: 5px;
-  outline: none; /* Remove default focus outline */
+  outline: none; 
 }
 
-/* Add a line-through effect for completed todos */
+
 .todo-item.completed input {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Button Styling */
+
 .todo-item .btn {
   border: none;
   background: none;
@@ -325,28 +209,20 @@ background-color: #E8E8E8;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Button Hover Effects */
+
 .todo-item .btn:hover,
 .todo-item .btn:focus {
   color: black;
-  background-color: white; /* Consistent hover background */
-  border-radius: 5px; /* Rounded corners on hover */
+  border-radius: 5px; 
 }
 
-/* Specific Button Styles */
+
 .todo-item .btn-done,
 .todo-item .btn-undo,
 .todo-item .btn-remove {
   font-size: 1.2rem;
-  background-color: transparent; /* Remove background color */
-  border: none; /* Remove border */
-}
-
-/* Todo Input Styles */
-.todo-input {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+  background-color: transparent; 
+  border: none; 
 }
 
 .todo-input input {
@@ -354,9 +230,11 @@ background-color: #E8E8E8;
   padding: 0.75rem;
   border-radius: 5px;
   border: 1px solid transparent;
-  background-color: #E8E8E8; /* Match the background color */
+  background-color: #E8E8E8; 
+
 }
 
+/* General button styles */
 .todo-input button {
   background-color: black;
   border: none;
@@ -365,21 +243,54 @@ background-color: #E8E8E8;
   margin-left: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
+  font-size: 16px;
 }
 
-.todo-input button:hover {
-  background-color: black; /* Slightly lighter black */
-  transform: scale(1.05);
+/* Hover and focus state */
+.todo-input button:hover,
+.todo-input button:focus {
+  background-color: black;
   color: white;
+  transform: scale(1.05); /* Slightly enlarge the button */
+  outline: none; /* Remove default focus outline */
 }
+
+/* Active (click) state */
+.todo-input button:active {
+  background-color: black;
+  color: white;
+  transform: scale(1.05); /* Maintain enlarged size when clicked */
+}
+
+
+
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between elements as needed */
+  margin-bottom: 20px; /* Space below the input and buttons */
+}
+
+
 
 /* Filters Styling */
+
 .todo-filters {
   display: flex;
   justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
   margin-bottom: 1rem;
 }
+
+/* .todo-filters button {
+  padding: 10px 15px;
+  font-size: 16px;
+} */
+
 
 .todo-filters button {
   margin: 0 0.5rem;
@@ -405,6 +316,72 @@ background-color: #E8E8E8;
 .todo-item .fa {
   font-size: 1.2rem;
 }
+.todo-input input {
+  flex: 1;
+}
+
+.todo-input button {
+  margin-left: 5px;
+}
+
+.todo-item input {
+  width: calc(100% - 100px); 
+}
+
+.todo-item .d-flex {
+  justify-content: flex-end;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons a {
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .todo-filters {
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+  }
+
+  .todo-filters button {
+    width: 100%; /* Ensure buttons take full width */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .todo-input {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+
+  .todo-input input {
+    width: 100%; /* Make input field full width on mobile */
+    margin-bottom: 10px; /* Space below the input field */
+  }
+
+  .todo-input button {
+    width: 100%; /* Make buttons full width on mobile */
+    margin-bottom: 10px; /* Space below each button */
+  }
+}
+
+.todo-input input {
+  width: 100%;
+}
+
+.todo-container, .list-group {
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 
 /* login and signup page */
@@ -412,17 +389,12 @@ background-color: #E8E8E8;
 /* Full Height Container */
 .full-height {
   min-height: 100vh;
-  /* Ensure it covers the full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Center content vertically */
   align-items: center;
-  /* Center content horizontally */
   border-top-left-radius: 18px;
-  /* Border radius for top-left corner */
   border-bottom-left-radius: 18px;
-  /* Border radius for bottom-left corner */
   background: rgb(241, 241, 241);
   background: radial-gradient(circle, rgba(241, 241, 241, 1) 0%, rgba(243, 241, 255, 1) 1%, rgba(225, 226, 226, 1) 12%, rgba(168, 169, 171, 1) 45%, rgba(164, 165, 167, 1) 51%, rgba(156, 158, 160, 1) 60%, rgba(95, 97, 101, 1) 88%, rgba(64, 67, 71, 1) 99%, rgba(33, 37, 41, 1) 100%);
 }
@@ -431,13 +403,10 @@ background-color: #E8E8E8;
   .full-height {
     padding: 20px;
     border-top-left-radius: 18px;
-    /* Border radius for top-left corner */
     border-top-right-radius: 18px;
     border-bottom-left-radius: 0px;
     min-height: auto;
-    /* Reset the min-height for medium screens and smaller */
     height: auto;
-    /* Ensure the height adjusts to content */
   }
 }
 
@@ -452,7 +421,6 @@ background-color: #E8E8E8;
   position: absolute;
   top: 50%;
   left: 10px;
-  /* Position icon to the left */
   transform: translateY(-50%);
   color: black;
   font-size: 18px;
@@ -460,13 +428,11 @@ background-color: #E8E8E8;
   min-width: 50px;
   text-align: center;
   pointer-events: none;
-  /* Prevent the icon from blocking input */
 }
 
 .input-field {
   width: 100%;
   padding: 12px 12px 12px 60px;
-  /* Add left padding to avoid overlap with the icon */
   border-radius: 10px;
   background-color: #F3F1FF;
   outline: none;
@@ -489,41 +455,30 @@ background-color: #E8E8E8;
   align-items: center;
 }
 
-/* Custom Button */
 .custom-button {
   background-color: #212529;
-  /* Blue background */
   border-radius: 5px;
-  /* Rounded border radius */
   border: none;
-  /* Remove default border */
   color: white;
-  /* White text color */
   padding: 10px 20px;
-  /* Padding for the button */
   font-size: 16px;
-  /* Font size */
   transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Smooth transition */
+
 }
 
 .custom-button:hover {
   background-color: #212529;
-  /* Darker blue on hover */
   color: white;
   transform: scale(1.05);
-  /* Slightly enlarge on hover */
 }
 
 /* Login Container */
 .login {
   background-color: white;
-  /* White background for the whole screen */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* Full viewport height */
 }
 
 .placeholder-black::placeholder {
@@ -532,20 +487,18 @@ background-color: #E8E8E8;
 
 .rounded-input {
   border-radius: 5px;
-  /* Adjust the value to control roundness */
+  
 }
 
 /* Form Container */
 .form-container {
   background-color: #212529;
-  /* Light blue background */
   padding: 20px;
   border-radius: 5px;
   max-width: 100%;
-  /* Ensure it doesn't overflow */
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Optional: Add shadow for better visibility */
+ 
 }
 
 .form-container h3 {
@@ -560,7 +513,7 @@ background-color: #E8E8E8;
 
 .form-check-input {
   margin-right: 10px;
-  /* Adjust spacing between checkbox and label */
+  
 }
 
 .form-check-label {
@@ -577,60 +530,47 @@ background-color: #E8E8E8;
 
 .form-check a:visited {
   color: black;
-  /* Ensure it stays black after being clicked */
   text-decoration: underline;
-  /* Remove underline on visited state if needed */
 }
 
 .forgot-password:active {
   color: black;
-  /* Ensure it stays black when active */
+
   text-decoration: underline;
 }
 
-/* Custom Button for Smaller Buttons */
+
 .btn-custom {
   width: 90px;
   background-color: white;
   color: black;
   border: none;
-  /* Remove border */
   padding: 8px 16px;
-  /* Adjust padding for smaller button size */
   font-size: 14px;
-  /* Adjust font size if needed */
   text-transform: uppercase;
-  /* Optional: capitalize text */
   border-radius: 5px;
-  /* Optional: rounded corners */
   transition: transform 0.3s ease;
-  /* Smooth transition for transform */
+  
 }
 
 .btn-custom:hover {
   background-color: #f8f9fa;
-  /* Slightly different background on hover */
   color: black;
-  /* Ensure text color remains black */
   text-decoration: none;
-  /* Remove underline on hover */
   transform: scale(1.1);
-  /* Slightly enlarge the button */
 }
 
-/* Forgot Password Link */
+
 .forgot-password {
   color: black;
   text-decoration: none;
-  /* Remove underline if desired */
+
 }
 
 .forgot-password:hover {
   color: black;
-  /* Ensure it stays black on hover */
 }
 
-/* Full Width Button in Form Container */
 .form-container .btn {
   display: block;
   width: 100%;
