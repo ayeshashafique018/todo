@@ -171,7 +171,7 @@ background-color: #E8E8E8;
   padding: 0.75rem;
   border-radius: 5px;
   border: 1px solid transparent;
-  background-color: #F3F1FF; /* Match the background color */
+  background-color: #E8E8E8; /* Match the background color */
 }
 
 .todo-input button {
@@ -459,7 +459,7 @@ background-color: #E8E8E8;
   color: black;
 
 }
-.input-icons{
+.input-field{
   background-color: #E8E8E8;
 }
 .btn-square i {
