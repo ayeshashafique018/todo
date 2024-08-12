@@ -14,6 +14,30 @@ body {
 .content {
   flex: 1;
 }
+ .content {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .content {
+    padding: 20px;
+    margin: 0 10px;
+  }
+}
+
+.todo-input input {
+  width: 100%;
+}
+
+.todo-container, .list-group {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar-text {
+  margin-left: 10px;
+}
 
 /* Remove default focus styles for all buttons */
 .navbar .btn-p:focus,
