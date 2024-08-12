@@ -14,15 +14,174 @@ body {
 .content {
   flex: 1;
 }
- .content {
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
   padding: 15px;
   margin: 0 auto;
+  max-width: 1200px; /* Adjust as needed for your design */
 }
 
 @media (max-width: 576px) {
   .content {
     padding: 20px;
     margin: 0 10px;
+  }
+
+  /* Adjust navbar for small screens */
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 0;
+  }
+
+  .navbar-brand img {
+    height: 25px; /* Smaller logo on mobile */
+  }
+
+  /* Adjust footer for small screens */
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .btn-sm-square {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-icons a {
+    font-size: 14px;
+  }
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .btn {
+  margin: 0 5px;
+}
+
+.todo-input input {
+  flex: 1;
+}
+
+.todo-input button {
+  margin-left: 5px;
+}
+
+.todo-item input {
+  width: calc(100% - 100px); /* Adjust based on button sizes */
+}
+
+.todo-item .d-flex {
+  justify-content: flex-end;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons a {
+  font-size: 18px;
+  margin: 0 5px;
+}
+/* General Styles */
+.todo-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust as needed */
+  margin-top: 15px;
+}
+
+.todo-filters button {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .todo-filters {
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+  }
+
+  .todo-filters button {
+    width: 100%; /* Ensure buttons take full width */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}
+/* General Styles */
+.todo-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust as needed */
+  margin-top: 15px;
+}
+
+.todo-filters button {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .todo-filters {
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+  }
+
+  .todo-filters button {
+    width: 100%; /* Ensure buttons take full width */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}
+
+/* General Styles */
+.todo-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between elements as needed */
+  margin-bottom: 20px; /* Space below the input and buttons */
+}
+
+.todo-input input {
+  flex: 1; /* Allow input field to take up available space */
+  padding: 10px;
+  font-size: 16px;
+}
+
+.todo-input button {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .todo-input {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+
+  .todo-input input {
+    width: 100%; /* Make input field full width on mobile */
+    margin-bottom: 10px; /* Space below the input field */
+  }
+
+  .todo-input button {
+    width: 100%; /* Make buttons full width on mobile */
+    margin-bottom: 10px; /* Space below each button */
   }
 }
 
