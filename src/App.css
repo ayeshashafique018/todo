@@ -1,0 +1,468 @@
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Remove default focus styles for all buttons */
+.navbar .btn-p:focus,
+.navbar .btn-outline-light:focus,
+.navbar .btn-p:active,
+.navbar .btn-outline-light:active {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.navbar .btn-p,
+.navbar .btn-outline-light {
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar .btn-p {
+  background-color: #F3F1FF;
+  border-color: #F3F1FF;
+}
+
+.navbar .btn-p:hover {
+  transform: scale(1.05);
+}
+
+.navbar .btn-outline-light {
+  border-color: #F3F1FF;
+  color: black;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+  background-color: #F3F1FF;
+  padding: 10px 20px;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-text {
+  font-size: 1.25rem;
+  color: black;
+  margin: 0;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar .btn-p,
+.navbar .btn-outline-light {
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 8px 12px;
+}
+
+.navbar .btn-p:hover {
+  transform: scale(1.05);
+}
+
+.navbar .btn-outline-light:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Navbar Toggler Styles for Mobile */
+.navbar-toggler {
+  border: none;
+}
+
+/* Todo App Styles */
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* General Styling for Todo Item */
+.todo-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  background-color: #F3F1FF; /* Match background color */
+}
+
+/* Style the input text */
+.todo-item input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none; /* Remove default focus outline */
+}
+
+/* Add a line-through effect for completed todos */
+.todo-item.completed input {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Button Styling */
+.todo-item .btn {
+  border: none;
+  background: none;
+  padding: 0;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button Hover Effects */
+.todo-item .btn:hover,
+.todo-item .btn:focus {
+  color: black;
+  background-color: white; /* Consistent hover background */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Specific Button Styles */
+.todo-item .btn-done,
+.todo-item .btn-undo,
+.todo-item .btn-remove {
+  font-size: 1.2rem;
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+}
+
+/* Todo Input Styles */
+.todo-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #F3F1FF; /* Match the background color */
+}
+
+.todo-input button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.todo-input button:hover {
+  background-color: black; /* Slightly lighter black */
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Filters Styling */
+.todo-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.todo-filters button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.todo-filters button:hover {
+  background-color: black;
+  color: white;
+}
+
+.todo-filters .active {
+  background-color: black;
+  color: white;
+}
+
+/* Font Size for Icons */
+.todo-item .fa {
+  font-size: 1.2rem;
+}
+
+
+/* login and signup page */
+
+/* Full Height Container */
+.full-height {
+  min-height: 100vh;
+  /* Ensure it covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  border-top-left-radius: 18px;
+  /* Border radius for top-left corner */
+  border-bottom-left-radius: 18px;
+  /* Border radius for bottom-left corner */
+  background: rgb(241, 241, 241);
+  background: radial-gradient(circle, rgba(241, 241, 241, 1) 0%, rgba(243, 241, 255, 1) 1%, rgba(225, 226, 226, 1) 12%, rgba(168, 169, 171, 1) 45%, rgba(164, 165, 167, 1) 51%, rgba(156, 158, 160, 1) 60%, rgba(95, 97, 101, 1) 88%, rgba(64, 67, 71, 1) 99%, rgba(33, 37, 41, 1) 100%);
+}
+
+@media (max-width: 992px) {
+  .full-height {
+    padding: 20px;
+    border-top-left-radius: 18px;
+    /* Border radius for top-left corner */
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 0px;
+    min-height: auto;
+    /* Reset the min-height for medium screens and smaller */
+    height: auto;
+    /* Ensure the height adjusts to content */
+  }
+}
+
+/* Input Icons */
+.input-icons {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-icons .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  /* Position icon to the left */
+  transform: translateY(-50%);
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  min-width: 50px;
+  text-align: center;
+  pointer-events: none;
+  /* Prevent the icon from blocking input */
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 12px 12px 60px;
+  /* Add left padding to avoid overlap with the icon */
+  border-radius: 10px;
+  background-color: #F3F1FF;
+  outline: none;
+  border: none;
+}
+
+/* Placeholder Styling */
+.input-field::placeholder {
+  color: black;
+}
+
+/* Item Container */
+.item {
+  box-shadow: -1px 0px 45px -16px rgba(0, 0, 0, 0.57);
+  display: flex;
+  height: auto;
+  width: 800px;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom Button */
+.custom-button {
+  background-color: #212529;
+  /* Blue background */
+  border-radius: 5px;
+  /* Rounded border radius */
+  border: none;
+  /* Remove default border */
+  color: white;
+  /* White text color */
+  padding: 10px 20px;
+  /* Padding for the button */
+  font-size: 16px;
+  /* Font size */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.custom-button:hover {
+  background-color: #212529;
+  /* Darker blue on hover */
+  color: white;
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+}
+
+/* Login Container */
+.login {
+  background-color: white;
+  /* White background for the whole screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.placeholder-black::placeholder {
+  color: black;
+}
+
+.rounded-input {
+  border-radius: 5px;
+  /* Adjust the value to control roundness */
+}
+
+/* Form Container */
+.form-container {
+  background-color: #212529;
+  /* Light blue background */
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 100%;
+  /* Ensure it doesn't overflow */
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Optional: Add shadow for better visibility */
+}
+
+.form-container h3 {
+  margin-bottom: 20px;
+}
+
+/* Form Check */
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-right: 10px;
+  /* Adjust spacing between checkbox and label */
+}
+
+.form-check-label {
+  margin-right: 10px;
+  margin-top: 7px;
+}
+
+.form-check-label,
+.form-check a {
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+}
+
+.form-check a:visited {
+  color: black;
+  /* Ensure it stays black after being clicked */
+  text-decoration: underline;
+  /* Remove underline on visited state if needed */
+}
+
+.forgot-password:active {
+  color: black;
+  /* Ensure it stays black when active */
+  text-decoration: underline;
+}
+
+/* Custom Button for Smaller Buttons */
+.btn-custom {
+  width: 90px;
+  background-color: white;
+  color: black;
+  border: none;
+  /* Remove border */
+  padding: 8px 16px;
+  /* Adjust padding for smaller button size */
+  font-size: 14px;
+  /* Adjust font size if needed */
+  text-transform: uppercase;
+  /* Optional: capitalize text */
+  border-radius: 5px;
+  /* Optional: rounded corners */
+  transition: transform 0.3s ease;
+  /* Smooth transition for transform */
+}
+
+.btn-custom:hover {
+  background-color: #f8f9fa;
+  /* Slightly different background on hover */
+  color: black;
+  /* Ensure text color remains black */
+  text-decoration: none;
+  /* Remove underline on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge the button */
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  color: black;
+  text-decoration: none;
+  /* Remove underline if desired */
+}
+
+.forgot-password:hover {
+  color: black;
+  /* Ensure it stays black on hover */
+}
+
+/* Full Width Button in Form Container */
+.form-container .btn {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+/* App.css */
+.input-icons .icon {
+  color: black;
+}
+
+.btn-square i {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.btn-square i:hover {
+  color: black;
+}
