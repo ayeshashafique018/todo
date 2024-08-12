@@ -32,8 +32,8 @@ body {
 }
 
 .navbar .btn-p {
-  background-color: #F3F1FF;
-  border-color: #F3F1FF;
+  background-color:#E8E8E8;
+  border-color: #E8E8E8;
 }
 
 .navbar .btn-p:hover {
@@ -41,13 +41,13 @@ body {
 }
 
 .navbar .btn-outline-light {
-  border-color: #F3F1FF;
+  border-color: #E8E8E8;
   color: black;
 }
 
 /* Navbar Styles */
 .custom-navbar {
-background-color: #ddd;
+background-color: #E8E8E8;
   padding: 10px 20px;
 }
 
@@ -107,7 +107,7 @@ background-color: #ddd;
   border-bottom: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 0.5rem;
-  background-color: #F3F1FF; /* Match background color */
+  background-color:#ddd; /* Match background color */
 }
 
 /* Style the input text */
@@ -455,9 +455,13 @@ background-color: #ddd;
 }
 /* App.css */
 .input-icons .icon {
+ 
   color: black;
-}
 
+}
+.input-icons{
+  background-color: #E8E8E8;
+}
 .btn-square i {
   color: black;
   transition: color 0.3s ease;
