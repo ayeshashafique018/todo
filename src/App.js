@@ -63,7 +63,7 @@ function App() {
           <Link to="/" className="navbar-brand">
             <img src={logo} alt="logo" style={{ height: '30px', width: 'auto' }} />
           </Link>
-          <div className="navbar-text ms-3">Todo App</div>
+          <div className="navbar-text ms-3">Todo </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
