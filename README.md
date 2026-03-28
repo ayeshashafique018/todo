@@ -1,6 +1,6 @@
 # 📝 Todo App
 
-## 🎉 Overview
+## Overview
 This **React-based Todo App** is a sleek and efficient task management application built during the MERN Bootcamp. It was honored as the **Second Best Submission** among all projects, showcasing strong functionality, user experience, and clean code.
 
 With this app, users can **add, update, delete, and organize tasks** effortlessly, complemented by secure login and signup authentication. Its responsive design ensures a seamless experience across desktops and mobile devices.
