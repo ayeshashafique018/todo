@@ -30,15 +30,17 @@ With this app, users can **add, update, delete, and organize tasks** effortlessl
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Prerequisites
 
-- Node.js installed on your machine  
-- npm or yarn package manager
+<img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/07e2881a-0371-436c-aecd-2dcdd521757f" />
+<img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/1a3d2f14-a61f-464e-9dc2-8c4ca16c680f" />
+<img width="1365" height="596" alt="image" src="https://github.com/user-attachments/assets/ba77096e-4eb1-4b56-a16a-e7d97eaabfd7" />
 
-### Installation
 
-1. Clone the repository:
+- <img width="1365" height="597" alt="image" src="https://github.com/user-attachments/assets/f8e1b025-fe0e-457c-8f1e-49117cd97652" />
 
-   ```bash
-   git clone https://github.com/yourusername/todo-app.git
-   cd todo-app
+<img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/0db7b524-f241-4354-b50e-9fe38c2b7a9f" />
+
+<img width="1365" height="638" alt="image" src="https://github.com/user-attachments/assets/7ed52207-9bd3-4640-af60-49c78de39542" />
+
+
+
